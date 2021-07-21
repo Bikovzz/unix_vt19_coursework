@@ -1,0 +1,6 @@
+/home/mrchelbas/Bikovzz/Bikovzz/currency_calculator/currency_calculator/bin/Debug/currency_calculator.exe
+/home/mrchelbas/Bikovzz/Bikovzz/currency_calculator/currency_calculator/bin/Debug/currency_calculator.pdb
+/home/mrchelbas/Bikovzz/Bikovzz/currency_calculator/currency_calculator/obj/x86/Debug/currency_calculator.csprojAssemblyReference.cache
+/home/mrchelbas/Bikovzz/Bikovzz/currency_calculator/currency_calculator/obj/x86/Debug/currency_calculator.csproj.CoreCompileInputs.cache
+/home/mrchelbas/Bikovzz/Bikovzz/currency_calculator/currency_calculator/obj/x86/Debug/currency_calculator.exe
+/home/mrchelbas/Bikovzz/Bikovzz/currency_calculator/currency_calculator/obj/x86/Debug/currency_calculator.pdb

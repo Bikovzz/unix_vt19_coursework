@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Release/currency_calculator.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="651 452">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.ComboBox" id="cmbFrom">
+            <property name="MemberName" />
+            <property name="WidthRequest">150</property>
+            <property name="HeightRequest">30</property>
+            <property name="IsTextCombo">True</property>
+            <property name="Items" translatable="yes">USD
+RUB
+UAH
+EUR</property>
+          </widget>
+          <packing>
+            <property name="X">70</property>
+            <property name="Y">90</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBox" id="cmbTo">
+            <property name="MemberName" />
+            <property name="WidthRequest">150</property>
+            <property name="HeightRequest">30</property>
+            <property name="IsTextCombo">True</property>
+            <property name="Items" translatable="yes">USD
+RUB
+UAH
+EUR</property>
+          </widget>
+          <packing>
+            <property name="X">426</property>
+            <property name="Y">90</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entValue">
+            <property name="MemberName" />
+            <property name="WidthRequest">150</property>
+            <property name="HeightRequest">30</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">70</property>
+            <property name="Y">148</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblResult">
+            <property name="MemberName" />
+            <property name="WidthRequest">150</property>
+            <property name="HeightRequest">30</property>
+          </widget>
+          <packing>
+            <property name="X">425</property>
+            <property name="Y">148</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btnCalculate">
+            <property name="MemberName" />
+            <property name="WidthRequest">150</property>
+            <property name="HeightRequest">30</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Calculate</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnBtnCalculateClicked" />
+          </widget>
+          <packing>
+            <property name="X">251</property>
+            <property name="Y">365</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
