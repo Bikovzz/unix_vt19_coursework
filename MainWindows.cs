@@ -20,7 +20,7 @@ public partial class MainWindow : Gtk.Window
         a.RetVal = true;
     }
 
-    protected void OnButton2Clicked(object sender, EventArgs e)
+    protected void OnBtnCalculateClicked(object sender, EventArgs e)
     {
         String usd, eur, rub;
         WebClient wc = new WebClient();
@@ -36,7 +36,7 @@ public partial class MainWindow : Gtk.Window
         }
         else if (cmbFrom.ActiveText.ToString() == "EUR" && cmbTo.ActiveText.ToString() == "RUB")
         {
-            k = Convert.ToDouble(eur) / (1/Convert.ToDouble(rub));
+            k = Convert.ToDouble(eur) / (1 / Convert.ToDouble(rub));
         }
         else if (cmbFrom.ActiveText.ToString() == "EUR" && cmbTo.ActiveText.ToString() == "UAH")
         {
@@ -48,7 +48,7 @@ public partial class MainWindow : Gtk.Window
         }
         else if (cmbFrom.ActiveText.ToString() == "USD" && cmbTo.ActiveText.ToString() == "RUB")
         {
-            k = Convert.ToDouble(usd) / (1/Convert.ToDouble(rub));
+            k = Convert.ToDouble(usd) / (1 / Convert.ToDouble(rub));
         }
         else if (cmbFrom.ActiveText.ToString() == "USD" && cmbTo.ActiveText.ToString() == "UAH")
         {
@@ -56,15 +56,15 @@ public partial class MainWindow : Gtk.Window
         }
         else if (cmbFrom.ActiveText.ToString() == "RUB" && cmbTo.ActiveText.ToString() == "EUR")
         {
-            k = (1/Convert.ToDouble(rub)) / Convert.ToDouble(eur);
+            k = (1 / Convert.ToDouble(rub)) / Convert.ToDouble(eur);
         }
         else if (cmbFrom.ActiveText.ToString() == "RUB" && cmbTo.ActiveText.ToString() == "USD")
         {
-            k = (1/Convert.ToDouble(rub)) / Convert.ToDouble(usd);
+            k = (1 / Convert.ToDouble(rub)) / Convert.ToDouble(usd);
         }
         else if (cmbFrom.ActiveText.ToString() == "RUB" && cmbTo.ActiveText.ToString() == "UAH")
         {
-            k = 1/Convert.ToDouble(rub);
+            k = 1 / Convert.ToDouble(rub);
         }
         else if (cmbFrom.ActiveText.ToString() == "UAH" && cmbTo.ActiveText.ToString() == "RUB")
         {
@@ -92,7 +92,7 @@ public partial class MainWindow : Gtk.Window
         {
             lblResult.Text = (Convert.ToDouble(value) * k).ToString();
         }
-        else if(!success)
+        else if (!success)
         {
             lblResult.Text = "Incorrect value!";
         }
